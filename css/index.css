@@ -5,6 +5,10 @@
 @import "./button-icon.css";
 @import "./sidebar.css";
 @import "./ellipsis.css";
+@import "./player.css";
+@import "./page.css";
+@import "./layout.css";
+@import "./scrollbar.css";
 
 :root {
   --primary: #00b050;
@@ -22,4 +26,15 @@
   --baseFont: bold 0.875rem/1.375rem var(--basefontFamily);
   --button: normal 0.875rem/1rem var(--basefontFamily);
   --smallFont: normal 0.65625rem / normal var(--basefontFamily);
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1367px) {
+  :root {
+    font-size: 18px;
+  }
 }
