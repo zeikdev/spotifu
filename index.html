@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/index.css">
   <title>Spotifu</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/index.css">
   <!-- Open Graph -->
   <meta property="og:title" content="Mi Proyecto del curso de Flexbox Layout y Componentes" />
   <meta property="og:type" content="website" />
@@ -35,101 +36,816 @@
 
 <body class="body">
 
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <!-- Header -->
-    <header class="logo">
-      <a href="/" aria-current="page">
-        <img src="./images/spotifu-logo.png" class="logo-image" width="112" height="32" alt="Logo de Spotifu">
-      </a>
-    </header>
-    <!-- end of Header -->
+  <div class="layout">
+    <div class="layout-block">
 
-    <!-- Nav -->
-    <nav class="menu" aria-label="Principal">
-      <ul class="menu-list">
+      <!-- Sidebar -->
+      <div class="layout-sidebar">
+        <div class="sidebar">
+          <!-- Header -->
+          <header class="logo">
+            <a href="/" aria-current="page">
+              <img src="./images/spotifu-logo.png" class="logo-image" width="112" height="32" alt="Logo de Spotifu">
+            </a>
+          </header>
+          <!-- end of Header -->
 
-        <li class="menuItem is-active">
-          <a href="/" class="link" aria-current="page">
-            <i class="icon-home" aria-hidden="true"></i>
-            <span>Inicio</span>
-          </a>
-        </li>
+          <!-- Nav -->
+          <nav class="menu" aria-label="Principal">
+            <ul class="menu-list">
 
-        <li class="menuItem">
-          <a href="#" class="link">
-            <i class="icon-search" aria-hidden="true"></i>
-            <span>Buscar</span>
-          </a>
-        </li>
+              <li class="menuItem is-active">
+                <a href="/" class="link" aria-current="page">
+                  <i class="icon-home" aria-hidden="true"></i>
+                  <span>Inicio</span>
+                </a>
+              </li>
 
-        <li class="menuItem">
-          <a href="#" class="link">
-            <i class="icon-creditCard" aria-hidden="true"></i>
-            <span>Premium</span>
-          </a>
-        </li>
+              <li class="menuItem">
+                <a href="#" class="link">
+                  <i class="icon-search" aria-hidden="true"></i>
+                  <span>Buscar</span>
+                </a>
+              </li>
 
-      </ul>
-    </nav>
+              <li class="menuItem">
+                <a href="#" class="link">
+                  <i class="icon-creditCard" aria-hidden="true"></i>
+                  <span>Premium</span>
+                </a>
+              </li>
 
-    <nav class="list" aria-labelledby="library-navigation">
-      <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
-      <ul class="list-content">
-        <li class="list-item"><a href="#" class="link">Creada para ti</a></li>
-        <li><a href="#" class="link">Escuchado recientemente</a></li>
-        <li><a href="#" class="link">Tus Me Gusta</a></li>
-      </ul>
-    </nav>
+            </ul>
+          </nav>
 
-    <nav class="list" aria-labelledby="playlist-navigation">
-      <h2 class="list-title" id="playlist-navigation">Playlists</h2>
-      <ul class="list-content">
-        <li><a href="#" class="link">Lo mejor de los mejor</a></li>
-        <li>
-          <span class="ellipsis">
-            <a href="#" class="link">Naruto al 100% para programar como un hokage</a>
-          </span>
-        </li>
-        <li><a href="#" class="link">Para cantar en la ducha</a></li>
-        <li><a href="#" class="link">Sin parar</a></li>
-        <li><a href="#" class="link">Naruto openings</a></li>
-        <li><a href="#" class="link">Boku no pico</a></li>
-        <li><a href="#" class="link">This is Pokémon</a></li>
-        <li><a href="#" class="link">Más populares de la semana</a></li>
-        <li><a href="#" class="link">Mis pistas de shazam</a></li>
-      </ul>
-    </nav>
-    <!-- end of Nav -->
+          <nav class="list" aria-labelledby="library-navigation">
+            <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
+            <ul class="list-content">
+              <li class="list-item"><a href="#" class="link">Creada para ti</a></li>
+              <li><a href="#" class="link">Escuchado recientemente</a></li>
+              <li><a href="#" class="link">Tus Me Gusta</a></li>
+            </ul>
+          </nav>
+
+          <nav class="list" aria-labelledby="playlist-navigation">
+            <h2 class="list-title" id="playlist-navigation">Playlists</h2>
+            <ul class="list-content">
+              <li><a href="#" class="link">Lo mejor de los mejor</a></li>
+              <li>
+                <span class="ellipsis">
+                  <a href="#" class="link">Naruto al 100% para programar como un hokage</a>
+                </span>
+              </li>
+              <li><a href="#" class="link">Para cantar en la ducha</a></li>
+              <li><a href="#" class="link">Sin parar</a></li>
+              <li><a href="#" class="link">Naruto openings</a></li>
+              <li><a href="#" class="link">Boku no pico</a></li>
+              <li><a href="#" class="link">This is Pokémon</a></li>
+              <li><a href="#" class="link">Más populares de la semana</a></li>
+              <li><a href="#" class="link">Mis pistas de shazam</a></li>
+              <li><a href="#" class="link">Rels B</a></li>
+              <li><a href="#" class="link">Neo Pistea</a></li>
+            </ul>
+          </nav>
+          <!-- end of Nav -->
+        </div>
+      </div>
+      <!-- end of Sidebar -->
+
+      <!-- Page -->
+      <div class="layout-main">
+        <div class="page">
+
+          <!-- Header -->
+          <div class="sticky">
+            <div class="page-block">
+              <header class="header" aria-label="Barra superior y menú del usuario">
+                <!-- Navegación -->
+                <div class="navigation">
+                  <button class="navigation-prev" aria-label="Volver" title="Volver">
+                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                  </button>
+                  <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                    <i class="icon-arrowRight" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <!-- end of Navegación -->
+
+                <!-- Formulario -->
+                <form class="search" action="#" role="search" aria-label="Buscar por Artistas, canciones o podcasts">
+                  <i class="icon-search" aria-hidden="true"></i>
+                  <input type="search" placeholder="Artistas, canciones o podcasts">
+                </form>
+                <!-- end of Formulario -->
+              </header>
+            </div>
+            <!-- end of Header -->
+          </div>
+
+          <main class="page-block">
+            <!-- Playlist List -->
+
+            <!-- #1 -->
+            <section class="playlistList" aria-labelledby="region1">
+
+              <div class="playlistList-top">
+                <h2 class="playlistList-title" id="region1">Buenas Noches</h2>
+
+                <!-- Navegación -->
+                <div class="navigation">
+                  <button class="navigation-prev" aria-label="Volver" title="Volver">
+                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                  </button>
+                  <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                    <i class="icon-arrowRight" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <!-- end of Navegación -->
+
+              </div>
+
+              <div class="playlistList-container">
+
+                <!-- PLaylist (B) -->
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/anime-hits.png" width="76" height="76" alt="Cover de la playlist Anime Hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Naruto Openings & Endings</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary"
+                        aria-label="Reproducir la lista de reproducción Naruto Openings & Endings"
+                        title="Reproducir la lista de reproducción Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of PLaylist (B) -->
+                <!-- PLaylist (B) -->
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/anime-hits.png" width="76" height="76" alt="Cover de la playlist Anime Hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Naruto Openings & Endings</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary"
+                        aria-label="Reproducir la lista de reproducción Naruto Openings & Endings"
+                        title="Reproducir la lista de reproducción Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of PLaylist (B) -->
+                <!-- PLaylist (B) -->
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/anime-hits.png" width="76" height="76" alt="Cover de la playlist Anime Hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Naruto Openings & Endings</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary"
+                        aria-label="Reproducir la lista de reproducción Naruto Openings & Endings"
+                        title="Reproducir la lista de reproducción Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of PLaylist (B) -->
+                <!-- PLaylist (B) -->
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/anime-hits.png" width="76" height="76" alt="Cover de la playlist Anime Hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Naruto Openings & Endings</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary"
+                        aria-label="Reproducir la lista de reproducción Naruto Openings & Endings"
+                        title="Reproducir la lista de reproducción Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of PLaylist (B) -->
+                <!-- PLaylist (B) -->
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/anime-hits.png" width="76" height="76" alt="Cover de la playlist Anime Hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Naruto Openings & Endings</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary"
+                        aria-label="Reproducir la lista de reproducción Naruto Openings & Endings"
+                        title="Reproducir la lista de reproducción Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of PLaylist (B) -->
+                <!-- PLaylist (B) -->
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/anime-hits.png" width="76" height="76" alt="Cover de la playlist Anime Hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Naruto Openings & Endings</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary"
+                        aria-label="Reproducir la lista de reproducción Naruto Openings & Endings"
+                        title="Reproducir la lista de reproducción Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of PLaylist (B) -->
+                <!-- PLaylist (B) -->
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/anime-hits.png" width="76" height="76" alt="Cover de la playlist Anime Hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Naruto Openings & Endings</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary"
+                        aria-label="Reproducir la lista de reproducción Naruto Openings & Endings"
+                        title="Reproducir la lista de reproducción Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of PLaylist (B) -->
+                <!-- PLaylist (B) -->
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/anime-hits.png" width="76" height="76" alt="Cover de la playlist Anime Hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Naruto Openings & Endings</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary"
+                        aria-label="Reproducir la lista de reproducción Naruto Openings & Endings"
+                        title="Reproducir la lista de reproducción Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of PLaylist (B) -->
+                <!-- PLaylist (B) -->
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/anime-hits.png" width="76" height="76" alt="Cover de la playlist Anime Hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Naruto Openings & Endings</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary"
+                        aria-label="Reproducir la lista de reproducción Naruto Openings & Endings"
+                        title="Reproducir la lista de reproducción Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of PLaylist (B) -->
+
+              </div>
+
+            </section>
+            <!-- end of #1 -->
+
+            <!-- #2 -->
+            <section class="playlistList" aria-labelledby="region2">
+
+              <div class="playlistList-top">
+                <h2 class="playlistList-title" id="region2">Escuchado Recientemente</h2>
+
+                <!-- Navegación -->
+                <div class="navigation">
+                  <button class="navigation-prev" aria-label="Volver" title="Volver">
+                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                  </button>
+                  <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                    <i class="icon-arrowRight" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <!-- end of Navegación -->
+
+              </div>
+
+
+
+              <div class="playlistList-container">
+
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+
+
+              </div>
+
+            </section>
+            <!-- end of #2 -->
+
+            <!-- #3 -->
+            <section class="playlistList" aria-labelledby="region3">
+
+              <div class="playlistList-top">
+                <h2 class="playlistList-title" id="region3">Podcast</h2>
+
+                <!-- Navegación -->
+                <div class="navigation">
+                  <button class="navigation-prev" aria-label="Volver" title="Volver">
+                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                  </button>
+                  <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                    <i class="icon-arrowRight" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <!-- end of Navegación -->
+
+              </div>
+
+
+
+              <div class="playlistList-container">
+
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+
+
+              </div>
+
+            </section>
+            <!-- end of #3 -->
+
+            <!-- #4 -->
+            <section class="playlistList" aria-labelledby="region4">
+
+              <div class="playlistList-top">
+                <h2 class="playlistList-title" id="region4">Lo mejor de la Semana</h2>
+
+                <!-- Navegación -->
+                <div class="navigation">
+                  <button class="navigation-prev" aria-label="Volver" title="Volver">
+                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                  </button>
+                  <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                    <i class="icon-arrowRight" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <!-- end of Navegación -->
+
+              </div>
+
+
+
+              <div class="playlistList-container">
+
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+                <!-- Playlist A -->
+                <div class="playlistA">
+                  <div class="playlistA-cover">
+                    <img src="./images/anime-hits.png" width="150" height="150" alt="Cover de la playlist Anime Hits">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Anime Hits</h3>
+                  <h4 class="playlistA-description">Naruto, Your Name, Weathering With You</h4>
+                </div>
+                <!-- end of Playlist A -->
+
+
+              </div>
+
+            </section>
+            <!-- end of #4 -->
+
+            <!-- end of Playlist List -->
+          </main>
+
+        </div>
+      </div>
+      <!-- end of Page -->
+
+    </div>
+
+    <div class="layout-block">
+      <footer class="layout-bottom">
+        <!-- Reproductor -->
+        <div class="player">
+
+          <div class="player-nowPlaying">
+            <!-- Reproduciendo Actualmente -->
+            <div class="nowPlaying">
+
+              <div class="nowPlaying-cover">
+                <img src="./images/grand-scape.jpg"
+                  alt="Portada de Grand Escape (feat. Tokio Miura de RADWIMPS, Toko Miura"
+                  title="Portada de Grand Escape (feat. Tokio Miura de RADWIMPS, Tokio Miura">
+              </div>
+
+              <div class="nowPlaying-details">
+
+                <div class="nowPlaying-description">
+                  <a href="#" class="nowPlaying-title">Grand Escape (feat. Tokio Miura)</a>
+                  <a href="#" class="nowPlaying-artist">RADWIMPS, Tokio Miura</a>
+                </div>
+
+                <div class="nowPlaying-actions">
+
+                  <button class="player-control" role="switch" aria-checked="false"
+                    aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+                    <i class="icon-heart" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <!-- end of Reproduciendo Actualmente -->
+          </div>
+
+          <div class="player-playerControls">
+            <!-- Botones de Reproducción -->
+            <div class="playerControls">
+              <div class="playerControls-buttons" aria-label="Botones de Reproducción">
+
+                <button class="buttonIcon" aria-label="Anterior" title="Anterior">
+                  <i class="icon-prev" aria-hidden="true"></i>
+                </button>
+
+                <button class="buttonIcon is-white" aria-label="Reproducir" title="Reproducir">
+                  <i class="icon-play" aria-hidden="true"></i>
+                </button>
+
+                <button class="buttonIcon" aria-label="Siguiente" title="Siguiente">
+                  <i class="icon-next" aria-hidden="true"></i>
+                </button>
+
+              </div>
+
+              <div class="playerPlayback">
+                <span class="playerPlaybck-progressTime">01:40</span>
+                <!-- Slider -->
+                <div class="playerPlayback-slider">
+                  <div class="slider">
+                    <div class="slider-progress">
+                      <button class="slider-button" aria-label="Controlar el progreso de la reproducción"></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of Slider -->
+                <span class="playerPlaybck-progressTime">03:25</span>
+              </div>
+
+            </div>
+            <!-- end of Botones de Reproducción -->
+          </div>
+
+          <div class="player-playerVolume">
+            <!-- Controles de Volumen -->
+            <div class="playerVolume">
+
+              <button class="player-control" aria-describedby="volume-icon" aria-label="Silenciar">
+                <i class="icon-volumeUp" id="volume-icon" role="presentation" aria-label="Volumen Alto"></i>
+              </button>
+
+              <div class="playerVolume-slider">
+
+                <div class="slider">
+                  <div class="slider-progress">
+                    <button class="slider-button" aria-label="Controlar el progreso de la reproducción"></button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- end of Controles de Volumen -->
+          </div>
+
+        </div>
+      </footer>
+      <!-- end of Reproductor -->
+    </div>
   </div>
-  <!-- end of Sidebar -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <button class="buttonIcon is-white" aria-label="Reproducir" title="Reproducir">
-    <i class="icon-play" aria-hidden="true"></i>
-  </button>
 
 </body>
 
