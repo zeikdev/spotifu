@@ -1,0 +1,9 @@
+.logo {
+  padding-inline-start: 1.5rem;
+  padding-inline-end: 1.5rem;
+}
+
+.logo-image {
+  block-size: 2rem;
+  inline-size: 7rem;
+}
